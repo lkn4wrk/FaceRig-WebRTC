@@ -1,18 +1,15 @@
 $(function() {
-
   var localVideo = $('#facerig').get(0);
   var localStream;
 
-	navigator.mediaDevices.getUserMedia({video: true, audio: false})
-	.then(function(stream) {
+  navigator.mediaDevices.getUserMedia({video: true, audio: false})
+  .then(function(stream) {
     localStream = stream;
     localVideo.src = window.URL.createObjectURL(localStream);
-	}
-	).catch(function(error) {
+	}).catch(function(error) {
     console.error('mediaDevice.getUserMedia() error:', error);
     return;
-	}
-	);
+	});
 
   $(window).resize(function() {
     $('.wrapper').css({
