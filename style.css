@@ -1,0 +1,21 @@
+.wrapper {
+  position: relative;
+}
+
+.left_hand {
+  z-index: 10;
+  width: 20%;
+  height: auto;
+  position: absolute;
+  bottom: -30px;
+  left: 25%;
+}
+
+.right_hand {
+  z-index: 10;
+  width: 20%;
+  height: auto;
+  position: absolute;
+  bottom: -30px;
+  right: 25%;
+}
