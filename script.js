@@ -6,10 +6,10 @@ $(function() {
   .then(function(stream) {
     localStream = stream;
     localVideo.src = window.URL.createObjectURL(localStream);
-	}).catch(function(error) {
+  }).catch(function(error) {
     console.error('mediaDevice.getUserMedia() error:', error);
     return;
-	});
+  });
 
   $(window).resize(function() {
     $('.wrapper').css({
